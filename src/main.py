@@ -19,7 +19,7 @@ class AudioEngine:
         self.buffer = np.zeros(BUFFER_SIZE)
         self.delay_buffer = np.zeros(int(SAMPLE_RATE * 0.5))
         self.feedback = 0.5
-
+ 
     def generate_sine(self, frame_count, frequency):
         t = np.linspace(0, frame_count / SAMPLE_RATE, frame_count, False)
         return VOLUME * np.sin(2 * np.pi * frequency * t)
