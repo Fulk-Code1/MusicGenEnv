@@ -119,7 +119,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.layout.addWidget(self.play_fm)
         self.layout.addWidget(self.play_wavetable)
         self.layout.addWidget(self.stop_button)
-
+ 
         # Подключение кнопок
         self.play_sine.clicked.connect(lambda: self.audio_engine.set_synth_type("sine"))
         self.play_fm.clicked.connect(lambda: self.audio_engine.set_synth_type("fm"))
